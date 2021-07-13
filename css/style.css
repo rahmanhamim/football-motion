@@ -19,15 +19,15 @@ img {
 }
 .container {
  width: 95%;
- max-width: 1080px;
+ max-width: 1200px;
  margin: 0 auto;
 }
 .btn {
  background-color: #e02c6d;
  border: none;
- padding: 10px 24px;
+ padding: 15px 30px;
  color: #ffffff;
- font-weight: 600;
+ font-size: 16px;
  cursor: pointer;
  transition: transform 300ms;
 }
