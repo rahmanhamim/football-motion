@@ -1,0 +1,140 @@
+/* google font link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* universal style and utility */
+body {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
+header {
+ background-color: #2d25a0;
+ height: 100vh;
+ margin-bottom: 70px;
+}
+img {
+ display: block;
+ width: 100%;
+}
+.container {
+ width: 95%;
+ max-width: 1080px;
+ margin: 0 auto;
+}
+.btn {
+ background-color: #e02c6d;
+ border: none;
+ padding: 10px 24px;
+ color: #ffffff;
+ font-weight: 600;
+ cursor: pointer;
+ transition: transform 300ms;
+}
+.btn:hover {
+ transform: translateX(5px) scale(1.2);
+}
+/* ------------------------------
+header style and Nav
+----------------------------- */
+nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.navbar {
+ width: 50%;
+}
+
+.navbar ul {
+ display: flex;
+ justify-content: space-between;
+ padding: 0;
+}
+.navbar ul li {
+ list-style: none;
+}
+.navbar ul li a {
+ text-decoration: none;
+ color: #ffffff;
+}
+.header-content {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ min-height: 100%;
+ color: #ffffff;
+}
+.header-text h1 {
+ font-size: 64px;
+ margin: 0;
+}
+.header-text {
+ width: 50%;
+}
+.header-image {
+ width: 48%;
+}
+
+/* Header style end */
+/* -------------------------------
+players section
+----------------------------- */
+
+.players-section {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-gap: 30px;
+ margin-bottom: 5em;
+}
+.player {
+ padding: 15px;
+ border-radius: 0px;
+ background: #ffffff;
+ box-shadow: 6px 6px 12px #ededed, -6px -6px 12px #f3f3f3;
+ overflow: hidden;
+}
+.player img {
+ transition: all 800ms;
+}
+.player img:hover {
+ transform: scale(1.1);
+}
+.player p {
+ color: #6c6c6c;
+}
+/* ----------------------
+iframe
+----------------------- */
+.iframe-section {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin-bottom: 5em;
+}
+/* ---------------------------------------
+highlights section
+--------------------------------------- */
+.highlights-section {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 10em;
+}
+.highlights-text,
+.highlights-image {
+ width: 48%;
+}
+/*---------------------------------
+ footer style 
+ ----------------------------------*/
+.footer-section {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-bottom: 2em;
+}
+.footer-image {
+ width: 300px;
+}
