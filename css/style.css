@@ -255,7 +255,7 @@ Media queries Mobile Devices
   font-size: 2.5rem;
  }
  .header-image {
-  width: 100%;
+  width: 90%;
   margin-top: 2em;
  }
 
@@ -290,7 +290,7 @@ Media queries Mobile Devices
  .football {
   height: 50px;
   width: 50px;
-  top: 50px;
+  top: 35px;
   left: 10px;
  }
 }
@@ -321,7 +321,7 @@ Media Queries Tab Devices
   font-size: 2.5rem;
  }
  .header-image {
-  width: 100%;
+  width: 90%;
   margin-top: 2em;
  }
 
