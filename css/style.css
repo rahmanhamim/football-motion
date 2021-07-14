@@ -18,7 +18,7 @@ img {
  width: 100%;
 }
 .container {
- width: 95%;
+ width: 90%;
  max-width: 1200px;
  margin: 0 auto;
 }
@@ -49,7 +49,7 @@ nav {
 .navbar ul {
  display: flex;
  justify-content: space-between;
- padding: 0;
+ padding: 20px 0;
 }
 .navbar ul li {
  list-style: none;
@@ -57,6 +57,16 @@ nav {
 .navbar ul li a {
  text-decoration: none;
  color: #ffffff;
+ overflow: hidden;
+ transition: all 300;
+}
+.navbar ul li a:hover {
+ color: #e02c6d;
+}
+.fa-bars {
+ color: white;
+ font-size: 1.5em;
+ display: none;
 }
 .header-content {
  display: flex;
@@ -112,6 +122,9 @@ iframe
  flex-direction: column;
  margin-bottom: 5em;
 }
+.iframe-section h1 {
+ font-size: 2rem;
+}
 /* ---------------------------------------
 highlights section
 --------------------------------------- */
@@ -125,6 +138,42 @@ highlights section
 .highlights-image {
  width: 48%;
 }
+/* -------------------------
+ sponsors section 
+ -------------------------- */
+.sponsors-section {
+ padding: 1em 3em 3em 3em;
+ border-radius: 0px;
+ background: #ffffff;
+ box-shadow: 7px 7px 14px #ededed, -7px -7px 14px #ffffff;
+}
+.sponsors-title {
+ text-align: center;
+ font-size: 2rem;
+ color: #e02c6d;
+}
+.sponsors-title span {
+ color: #2d25a0;
+}
+.sponsor-showcase {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ grid-gap: 30px;
+}
+.sponsor {
+ padding: 25px 0;
+ border-radius: 25px;
+ background: #ffffff;
+ box-shadow: inset 12px 12px 27px #ebebeb, inset -12px -12px 27px #ffffff;
+ transition: all 300ms;
+}
+.sponsor:hover {
+ transform: scale(1.05);
+}
+.sponsor img {
+ width: 50%;
+ margin: 0 auto;
+}
 /*---------------------------------
  footer style 
  ----------------------------------*/
@@ -134,7 +183,56 @@ highlights section
  justify-content: center;
  align-items: center;
  padding-bottom: 2em;
+ padding-top: 3em;
 }
 .footer-image {
  width: 300px;
+}
+/* -----------------------------------
+Media queries
+------------------------------------ */
+@media screen and (max-width: 460px) {
+ /* header and nav media queries */
+ .navbar ul {
+  display: none;
+ }
+ .login-btn {
+  margin-top: 1em;
+ }
+ .fa-bars {
+  display: block;
+ }
+ .header-content {
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+ }
+ .header-text {
+  width: 100%;
+ }
+ .header-text h1 {
+  font-size: 2.5rem;
+ }
+ .header-image {
+  width: 100%;
+  margin-top: 2em;
+ }
+ .iframe-section {
+  display: none;
+ }
+ /* players grid section media queries */
+ .players-section {
+  grid-template-columns: repeat(1, 1fr);
+ }
+ /* Highlights Section media queries */
+ .highlights-section {
+  flex-direction: column;
+ }
+ .highlights-text,
+ .highlights-image {
+  width: 100%;
+ }
+ .highlights-image {
+  margin-top: 1.5em;
+ }
 }
