@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 /* universal style and utility */
+* {
+ scroll-behavior: smooth;
+}
 body {
  margin: 0;
  padding: 0;
@@ -30,6 +33,11 @@ img {
  font-size: 16px;
  cursor: pointer;
  transition: transform 300ms;
+}
+.btn a {
+ display: inline-block;
+ text-decoration: none;
+ color: #ffffff;
 }
 .btn:hover {
  transform: translateX(5px) scale(1.2);
@@ -207,7 +215,19 @@ highlights section style
 .footer-image {
  width: 300px;
 }
-
+.back-to-top {
+ font-size: 40px;
+ color: #e02c6d;
+ position: fixed;
+ bottom: 10px;
+ right: 20px;
+}
+.contact-icons a {
+ display: inline-block;
+ margin: 0 10px;
+ font-size: 2rem;
+ color: #b8b8b8;
+}
 /* ------------------------------------- 
  animation style
  -------------------------------------- */

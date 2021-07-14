@@ -14,15 +14,15 @@
   <title>Football Motion</title>
  </head>
  <body>
-  <header>
+  <header id="top">
    <nav class="container">
     <div class="navbar">
      <i class="fas fa-bars"></i>
      <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Clubs</a></li>
-      <li><a href="">World Cup 2022</a></li>
-      <li><a href="">Upcoming Matchs</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#players">Players</a></li>
+      <li><a href="#channel">Channel</a></li>
+      <li><a href="#highlights">Highlights</a></li>
       <li><a href="">Contact</a></li>
      </ul>
     </div>
@@ -37,7 +37,11 @@
       2021
      </h1>
      <button class="btn">
-      Watch Live <i class="fas fa-long-arrow-alt-right"></i>
+      <a
+       href="https://www.youtube.com/watch?v=sDFr2Yzd-8s&t=15s"
+       target="_blank"
+       >Watch Live <i class="fas fa-long-arrow-alt-right"></i
+      ></a>
      </button>
     </div>
     <div class="header-image">
@@ -48,7 +52,7 @@
   </header>
   <main class="container">
    <!-- Players Section Start -->
-   <div class="players-section">
+   <div class="players-section" id="players">
     <div class="player">
      <img src="./images/players/player-1.png" alt="" />
      <h2>Neymar Jr</h2>
@@ -165,7 +169,7 @@
     </div>
    </div>
    <!-- Iframe Section -->
-   <section class="iframe-section">
+   <section class="iframe-section" id="channel">
     <h1>Watch On YouTube</h1>
     <div class="iframe-container">
      <iframe
@@ -194,7 +198,7 @@
     </div>
    </section>
    <!-- Highlights Section Start -->
-   <section class="highlights-section">
+   <section class="highlights-section" id="highlights">
     <div class="highlights-text">
      <h2>All Highlights <br />Copa America 2021</h2>
      <p>
@@ -204,7 +208,11 @@
       left-back Renan Lodi to take control and lob it past goalkeeper Ederson.
      </p>
      <button class="btn">
-      Watch Now <i class="fas fa-long-arrow-alt-right"></i>
+      <a
+       href="https://www.youtube.com/watch?v=sDFr2Yzd-8s&t=15s"
+       target="_blank"
+       >Watch Now <i class="fas fa-long-arrow-alt-right"></i
+      ></a>
      </button>
     </div>
     <div class="highlights-image">
@@ -248,8 +256,26 @@
     <div class="footer-image">
      <img class="footer-image" src="./images/Logo.png" alt="" />
     </div>
+    <section class="contact-icons">
+     <a href="https://www.facebook.com/rahmanhamim.info/" target="_blank"
+      ><i class="fab fa-facebook"></i
+     ></a>
+     <a href="https://www.instagram.com/rh_hamim/" target="_blank"
+      ><i class="fab fa-instagram-square"></i
+     ></a>
+     <a href="https://www.linkedin.com/in/rahmanhamim/" target="_blank"
+      ><i class="fab fa-linkedin"></i
+     ></a>
+     <a href="https://www.pinterest.com/rahmanhamim" target="_blank"
+      ><i class="fab fa-pinterest"></i
+     ></a>
+    </section>
     <p>Copyright &copy; 2022 Football</p>
    </section>
+
+   <a class="back-to-top" href="#top"
+    ><i class="fas fa-arrow-alt-circle-up"></i>
+   </a>
   </footer>
  </body>
 </html>
