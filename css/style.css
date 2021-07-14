@@ -35,7 +35,7 @@ img {
  transform: translateX(5px) scale(1.2);
 }
 /* ------------------------------
-header style and Nav
+Navbar and Header Style
 ----------------------------- */
 nav {
  display: flex;
@@ -84,9 +84,19 @@ nav {
 }
 .header-image {
  width: 48%;
+ position: relative;
 }
-
-/* Header style end */
+.football-player {
+ animation: player 3s 1s alternate infinite;
+}
+.football {
+ position: absolute;
+ height: 80px;
+ width: 80px;
+ top: 85px;
+ left: 30px;
+ animation: football 6s 2s infinite;
+}
 /* -------------------------------
 players section
 ----------------------------- */
@@ -114,7 +124,7 @@ players section
  color: #6c6c6c;
 }
 /* ----------------------
-iframe
+iframe section style
 ----------------------- */
 .iframe-section {
  display: flex;
@@ -135,7 +145,7 @@ iframe
  font-size: 2rem;
 }
 /* ---------------------------------------
-highlights section
+highlights section style
 --------------------------------------- */
 .highlights-section {
  display: flex;
@@ -148,7 +158,7 @@ highlights section
  width: 48%;
 }
 /* -------------------------
- sponsors section 
+ sponsors section style
  -------------------------- */
 .sponsors-section {
  padding: 1em 3em 3em 3em;
@@ -197,9 +207,30 @@ highlights section
 .footer-image {
  width: 300px;
 }
-/* -----------------------------------
+
+/* ------------------------------------- 
+ animation style
+ -------------------------------------- */
+@keyframes player {
+ 0% {
+  transform: rotate(0);
+ }
+ 100% {
+  transform: rotate(20deg);
+ }
+}
+@keyframes football {
+ 0% {
+  transform: translateX(0px);
+ }
+ 50% {
+  transform: translateY(-400px) translateX(-400px);
+ }
+}
+
+/* -------------------------------------------------
 Media queries Mobile Devices
------------------------------------- */
+-------------------------------------------------- */
 @media screen and (max-width: 688px) {
  /* header and nav media queries */
  .navbar ul {
@@ -209,7 +240,8 @@ Media queries Mobile Devices
   margin-top: 1em;
  }
  .fa-bars {
-  display: block;
+  display: inline-block;
+  cursor: pointer;
  }
  .header-content {
   flex-direction: column;
@@ -254,11 +286,19 @@ Media queries Mobile Devices
  .sponsor-showcase {
   grid-template-columns: repeat(2, 1fr);
  }
+ /* ------- animation  ----------*/
+ .football {
+  height: 50px;
+  width: 50px;
+  top: 50px;
+  left: 10px;
+ }
 }
-/* -------------------------------------
+/* ----------------------------------------------
 Media Queries Tab Devices 
----------------------------------------*/
+------------------------------------------------- */
 @media screen and (min-width: 688px) and (max-width: 992px) {
+ /*  Navbar and Header */
  .navbar ul {
   display: none;
  }
@@ -266,7 +306,8 @@ Media Queries Tab Devices
   margin-top: 1em;
  }
  .fa-bars {
-  display: block;
+  display: inline-block;
+  cursor: pointer;
  }
  .header-content {
   flex-direction: column;
